@@ -34,4 +34,10 @@
         DELETE FROM energy_point
         WHERE id = #{id}
     </delete>
+
+    <!--    添加能效检测点  -->
+    <insert id="insertEnergyDetectionPoint">
+        INSERT INTO energy_detection_points (point_name, point_address, real_time_power, real_time_voltage, status, remark)
+        VALUES (#{pointName}, #{pointAddress}, #{realTimePower}, #{realTimeVoltage}, #{status}, #{remark})
+    </insert>
 </mapper>

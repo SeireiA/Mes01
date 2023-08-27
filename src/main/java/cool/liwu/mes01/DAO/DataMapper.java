@@ -15,5 +15,8 @@ public interface DataMapper {
             "AND status = #{status}")
     List<Data> searchData(SearchParams searchParams);
 
+    void createData(Data newData);
+
+
 }
 
