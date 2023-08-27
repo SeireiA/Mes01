@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="POJO.EnergyPoint">
+    <!-- 获取所有能效检测点 -->
+    <select id="getAllEnergyPoints" resultType="EnergyPoint">
+        SELECT *
+        FROM energy_point
+    </select>
+
+    <!-- 根据ID获取能效检测点 -->
+    <select id="getEnergyPointById" resultType="EnergyPoint">
+        SELECT *
+        FROM energy_point
+        WHERE id = #{id}
+    </select>
+
+    <!-- 更新能效检测点 -->
+    <update id="updateEnergyPoint">
+        UPDATE energy_point
+        SET name = #{name},
+            address = #{address},
+            real_time_power = #{realTimePower},
+            real_time_voltage = #{realTimeVoltage},
+            status = #{status},
+            remark = #{remark}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 删除能效检测点 -->
+    <delete id="deleteEnergyPoint">
+        DELETE FROM energy_point
+        WHERE id = #{id}
+    </delete>
+</mapper>
