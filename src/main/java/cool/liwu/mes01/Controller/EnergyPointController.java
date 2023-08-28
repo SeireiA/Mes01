@@ -7,16 +7,19 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/*
 
-//创建数据库语句:
-//        CREATE TABLE IF NOT EXISTS example_db_table (
-//        id BIGINT PRIMARY KEY,
-//        name VARCHAR(255) NOT NULL,
-//        address VARCHAR(255) NOT NULL,
-//        realTimePower DOUBLE NOT NULL,
-//        realTimeVoltage DOUBLE NOT NULL,
-//        status VARCHAR(255) NOT NULL
-//        );
+创建数据库语句:
+        CREATE TABLE IF NOT EXISTS example_db_table (
+        id BIGINT PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        address VARCHAR(255) NOT NULL,
+        realTimePower DOUBLE NOT NULL,
+        realTimeVoltage DOUBLE NOT NULL,
+        status VARCHAR(255) NOT NULL
+        );
+
+ */
 
 @RestController
 @RequestMapping("/api/energyPoint")

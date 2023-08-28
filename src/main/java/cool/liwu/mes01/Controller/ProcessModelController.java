@@ -4,20 +4,23 @@ import cool.liwu.mes01.POJO.ProcessModel;
 import cool.liwu.mes01.Service.ProcessModelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
-//创建数据库语句:
-//CREATE TABLE IF NOT EXISTS example_db_table (
-//        id VARCHAR(255) PRIMARY KEY,
-//        processName VARCHAR(255) NOT NULL,
-//        product VARCHAR(255) NOT NULL,
-//        model VARCHAR(255) NOT NULL,
-//        specification VARCHAR(255) NOT NULL,
-//        unit VARCHAR(255) NOT NULL,
-//        unitPowerConsumption DOUBLE NOT NULL,
-//        remark VARCHAR(255)
-//        );
+/*
+
+创建数据库语句:
+CREATE TABLE IF NOT EXISTS example_db_table (
+        id VARCHAR(255) PRIMARY KEY,
+        processName VARCHAR(255) NOT NULL,
+        product VARCHAR(255) NOT NULL,
+        model VARCHAR(255) NOT NULL,
+        specification VARCHAR(255) NOT NULL,
+        unit VARCHAR(255) NOT NULL,
+        unitPowerConsumption DOUBLE NOT NULL,
+        remark VARCHAR(255)
+        );
+
+ */
 
 
 @RestController
