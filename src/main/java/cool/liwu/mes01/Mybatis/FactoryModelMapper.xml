@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.FactoryModelMapper">
+
+    <select id="getFactoryModels" resultType="cool/liwu/mes01/DAO/FactoryModelMapper.java">
+        SELECT * FROM factory_model
+    </select>
+
+    <insert id="createFactoryModel">
+        INSERT INTO factory_model (product, production_line_name, description)
+        VALUES (#{product}, #{productionLineName}, #{description})
+    </insert>
+
+    <update id="updateFactoryModel">
+        UPDATE factory_model
+        SET product = #{product}, production_line_name = #{productionLineName}, description = #{description}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteFactoryModel">
+        DELETE FROM factory_model WHERE id = #{id}
+    </delete>
+
+    <select id="getMaterials" resultType="cool/liwu/mes01/DAO/FactoryModelMapper.java">
+        SELECT * FROM Materials
+    </select>
+
+</mapper>

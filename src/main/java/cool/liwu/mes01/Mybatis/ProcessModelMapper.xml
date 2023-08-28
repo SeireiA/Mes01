@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.ProcessModelMapper">
+
+    <select id="getProcessModels" resultType="com.example.pojo.ProcessModel">
+        SELECT * FROM process_model
+    </select>
+
+    <select id="getProcessModelsCount" resultType="int">
+        SELECT COUNT(*) FROM process_model
+    </select>
+
+    <select id="getProcessModelById" resultType="com.example.pojo.ProcessModel">
+        SELECT * FROM process_model WHERE id = #{id}
+    </select>
+
+    <select id="searchProcessModels" resultType="com.example.pojo.ProcessModel">
+        SELECT * FROM process_model WHERE process_name LIKE CONCAT('%', #{processName}, '%')
+    </select>
+
+    <select id="searchProcessModelsCount" resultType="int">
+        SELECT COUNT(*) FROM process_model WHERE process_name LIKE CONCAT('%', #{processName}, '%')
+    </select>
+
+    <insert id="insertProcessModel">
+        INSERT INTO process_model(id, process_name, product, model, specification, unit, unit_power_consumption, remark)
+        VALUES(#{id}, #{processName}, #{product}, #{model}, #{specification}, #{unit}, #{unitPowerConsumption}, #{remark})
+    </insert>
+
+    <update id="updateProcessModel">
+        UPDATE process_model SET
+                                 process_name = #{processName},
+                                 product = #{product},
+                                 model = #{model},
+                                 specification = #{specification},
+                                 unit = #{unit},
+                                 unit_power_consumption = #{unitPowerConsumption},
+                                 remark = #{remark}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteProcessModelById">
+        DELETE FROM process_model WHERE id = #{id}
+    </delete>
+
+</mapper>
