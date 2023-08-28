@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DAO.EnergyDetectionPointMapper">
+    <!--    添加能效检测点  -->
+    <insert id="insertEnergyDetectionPointMapper">
+        INSERT INTO energy_detection_points (point_name, point_address, real_time_power, real_time_voltage, status, remark)
+        VALUES (#{pointName}, #{pointAddress}, #{realTimePower}, #{realTimeVoltage}, #{status}, #{remark})
+    </insert>
+</mapper>
