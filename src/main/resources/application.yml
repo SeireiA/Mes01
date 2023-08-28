@@ -1,5 +1,7 @@
+#file: noinspection SpringBootApplicationYaml
 spring:
   hikari:
+    # noinspection SpringBootApplicationYaml
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8
     username: root
