@@ -10,6 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/*
+    创建数据库语句:
+            CREATE TABLE IF NOT EXISTS platform_dynamic (
+            id INT PRIMARY KEY,
+            icon VARCHAR(255),
+            title VARCHAR(255),
+            publishTime DATE
+            );
+
+ */
+
+
 @RestController
 @RequestMapping("/api/platformDynamic")
 public class PlatformDynamicController {
