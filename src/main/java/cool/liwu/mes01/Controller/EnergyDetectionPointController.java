@@ -10,6 +10,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+//创建数据库:
+//        CREATE TABLE IF NOT EXISTS energy_detection_points (
+//        id INT PRIMARY KEY AUTO_INCREMENT,
+//        pointName VARCHAR(255) NOT NULL,
+//        pointAddress VARCHAR(255) NOT NULL,
+//        realTimePower DOUBLE NOT NULL,
+//        realTimeVoltage DOUBLE NOT NULL,
+//        status INT NOT NULL,
+//        remark VARCHAR(255)
+//        );
+
 @RestController
 @RequestMapping("/points")
 public class EnergyDetectionPointController {

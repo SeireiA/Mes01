@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-
         //创建数据库表的SQL语句：
         //        CREATE TABLE factory_model (
         //        id INT PRIMARY KEY AUTO_INCREMENT,
