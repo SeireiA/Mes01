@@ -2,7 +2,6 @@ package cool.liwu.mes01.DAO;
 
 import cool.liwu.mes01.POJO.projectMaintenance;
 import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
