@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-        //数据库表设计：
-        //CREATE TABLE project (
-        //        id INT AUTO_INCREMENT PRIMARY KEY,
-        //        name VARCHAR(100) NOT NULL,
-        //        leader VARCHAR(50) NOT NULL,
-        //        start_date DATE NOT NULL,
-        //        end_date DATE NOT NULL,
-        //        status VARCHAR(10) NOT NULL
-        //        );
+//数据库表设计：
+//CREATE TABLE project (
+//        id INT AUTO_INCREMENT PRIMARY KEY,
+//        name VARCHAR(100) NOT NULL,
+//        leader VARCHAR(50) NOT NULL,
+//        start_date DATE NOT NULL,
+//        end_date DATE NOT NULL,
+//        status VARCHAR(10) NOT NULL
+//        );
 
 
 @RestController

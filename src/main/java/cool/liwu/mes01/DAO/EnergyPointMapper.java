@@ -8,7 +8,10 @@ import java.util.List;
 @Mapper
 public interface EnergyPointMapper {
     List<EnergyPoint> getAllEnergyPoints();
+
     EnergyPoint getEnergyPointById(Long id);
+
     void updateEnergyPoint(EnergyPoint energyPoint);
+
     void deleteEnergyPoint(Long id);
 }

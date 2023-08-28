@@ -9,6 +9,7 @@ import java.util.List;
 @Mapper
 public interface FactoryModelMapper {
     List<FactoryModel> getFactoryModels();
+
     List<Material> getMaterials();
 
     void createFactoryModel(FactoryModel factoryModel);

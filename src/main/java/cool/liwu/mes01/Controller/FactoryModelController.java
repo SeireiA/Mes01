@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-        //创建数据库表的SQL语句：
-        //        CREATE TABLE factory_model (
-        //        id INT PRIMARY KEY AUTO_INCREMENT,
-        //        product VARCHAR(100) NOT NULL,
-        //        production_line_name VARCHAR(100) NOT NULL,
-        //        description VARCHAR(255)
-        //        );
+//创建数据库表的SQL语句：
+//        CREATE TABLE factory_model (
+//        id INT PRIMARY KEY AUTO_INCREMENT,
+//        product VARCHAR(100) NOT NULL,
+//        production_line_name VARCHAR(100) NOT NULL,
+//        description VARCHAR(255)
+//        );
 
 @RestController
 public class FactoryModelController {

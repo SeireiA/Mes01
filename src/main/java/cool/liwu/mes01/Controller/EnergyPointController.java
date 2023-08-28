@@ -4,8 +4,8 @@ import cool.liwu.mes01.DAO.EnergyPointMapper;
 import cool.liwu.mes01.POJO.EnergyPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
 
+import java.util.List;
 
 
 //创建数据库语句:

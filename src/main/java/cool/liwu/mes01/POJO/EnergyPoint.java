@@ -7,6 +7,7 @@ public class EnergyPoint {
     private double realTimePower; // 实时功率
     private double realTimeVoltage; // 实时电压
     private String status; // 状态
+    private String remark; // 备注
 
     public Long getId() {
         return id;
@@ -63,8 +64,6 @@ public class EnergyPoint {
     public void setRemark(String remark) {
         this.remark = remark;
     }
-
-    private String remark; // 备注
 
     // 省略getter和setter方法
 }

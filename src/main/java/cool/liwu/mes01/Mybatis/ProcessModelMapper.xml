@@ -6,44 +6,55 @@
 <mapper namespace="com.example.mapper.ProcessModelMapper">
 
     <select id="getProcessModels" resultType="com.example.pojo.ProcessModel">
-        SELECT * FROM process_model
+        SELECT *
+        FROM process_model
     </select>
 
     <select id="getProcessModelsCount" resultType="int">
-        SELECT COUNT(*) FROM process_model
+        SELECT COUNT(*)
+        FROM process_model
     </select>
 
     <select id="getProcessModelById" resultType="com.example.pojo.ProcessModel">
-        SELECT * FROM process_model WHERE id = #{id}
+        SELECT *
+        FROM process_model
+        WHERE id = #{id}
     </select>
 
     <select id="searchProcessModels" resultType="com.example.pojo.ProcessModel">
-        SELECT * FROM process_model WHERE process_name LIKE CONCAT('%', #{processName}, '%')
+        SELECT *
+        FROM process_model
+        WHERE process_name LIKE CONCAT('%', #{processName}, '%')
     </select>
 
     <select id="searchProcessModelsCount" resultType="int">
-        SELECT COUNT(*) FROM process_model WHERE process_name LIKE CONCAT('%', #{processName}, '%')
+        SELECT COUNT(*)
+        FROM process_model
+        WHERE process_name LIKE CONCAT('%', #{processName}, '%')
     </select>
 
     <insert id="insertProcessModel">
         INSERT INTO process_model(id, process_name, product, model, specification, unit, unit_power_consumption, remark)
-        VALUES(#{id}, #{processName}, #{product}, #{model}, #{specification}, #{unit}, #{unitPowerConsumption}, #{remark})
+        VALUES (#{id}, #{processName}, #{product}, #{model}, #{specification}, #{unit}, #{unitPowerConsumption},
+                #{remark})
     </insert>
 
     <update id="updateProcessModel">
-        UPDATE process_model SET
-                                 process_name = #{processName},
-                                 product = #{product},
-                                 model = #{model},
-                                 specification = #{specification},
-                                 unit = #{unit},
-                                 unit_power_consumption = #{unitPowerConsumption},
-                                 remark = #{remark}
+        UPDATE process_model
+        SET process_name           = #{processName},
+            product                = #{product},
+            model                  = #{model},
+            specification          = #{specification},
+            unit                   = #{unit},
+            unit_power_consumption = #{unitPowerConsumption},
+            remark                 = #{remark}
         WHERE id = #{id}
     </update>
 
     <delete id="deleteProcessModelById">
-        DELETE FROM process_model WHERE id = #{id}
+        DELETE
+        FROM process_model
+        WHERE id = #{id}
     </delete>
 
 </mapper>

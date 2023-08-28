@@ -5,7 +5,8 @@
 <mapper namespace="com.example.mapper.FactoryModelMapper">
 
     <select id="getFactoryModels" resultType="cool/liwu/mes01/DAO/FactoryModelMapper.java">
-        SELECT * FROM factory_model
+        SELECT *
+        FROM factory_model
     </select>
 
     <insert id="createFactoryModel">
@@ -15,16 +16,21 @@
 
     <update id="updateFactoryModel">
         UPDATE factory_model
-        SET product = #{product}, production_line_name = #{productionLineName}, description = #{description}
+        SET product              = #{product},
+            production_line_name = #{productionLineName},
+            description          = #{description}
         WHERE id = #{id}
     </update>
 
     <delete id="deleteFactoryModel">
-        DELETE FROM factory_model WHERE id = #{id}
+        DELETE
+        FROM factory_model
+        WHERE id = #{id}
     </delete>
 
     <select id="getMaterials" resultType="cool/liwu/mes01/DAO/FactoryModelMapper.java">
-        SELECT * FROM Materials
+        SELECT *
+        FROM Materials
     </select>
 
 </mapper>
