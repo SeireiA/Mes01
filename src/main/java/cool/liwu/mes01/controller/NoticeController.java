@@ -47,6 +47,7 @@ public class NoticeController {
             fileContent = Files.readAllBytes(file.toPath());
         } catch (IOException e) {
             // 处理异常...
+            System.out.println(e.getMessage());
         }
 
         // 设置响应头信息，指定文件名及下载方式
